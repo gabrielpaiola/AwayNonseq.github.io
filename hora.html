@@ -34,10 +34,8 @@
 			if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
 
 			dataFormat = vano+vmes+vdia;
-			horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
 
 			document.getElementById("data").innerHTML = dataFormat;
-			document.getElementById("hora").innerHTML = horaFormat;
 
 			setTimeout("atualizaRelogio()",1000);
 		}
