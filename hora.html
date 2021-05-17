@@ -33,7 +33,7 @@
 			if (vminuto < 10){ vminuto = "0" + vminuto;}
 			if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
 
-			dataFormat = vdia + " / " + vmes + " / " + vano;
+			dataFormat = vano+vmes+vdia;
 			horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
 
 			document.getElementById("data").innerHTML = dataFormat;
