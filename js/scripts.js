@@ -64,7 +64,7 @@ const handleClickOutside = (event) => {
     }
 }
 
-const modal = () => {
+const openModal = () => {
     let overlay = document.getElementById("overlay");
     let modal = document.getElementById("modal");
     overlay.style.display = 'flex'
