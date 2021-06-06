@@ -5227,7 +5227,7 @@ textarea.form-control-lg {
 .modal {
   position: fixed;
   top: 0;
-  left: 25%;
+  left: 15%;
   z-index: 1060;
   display: none;
   width: 75%;
