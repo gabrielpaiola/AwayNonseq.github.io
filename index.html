@@ -343,20 +343,6 @@
             <script src="https://apps.elfsight.com/p/platform.js" defer></script>
             <div class="elfsight-app-4647a97e-f1b9-4a00-a820-f715d135b7f0"></div>
                
-            <p id="live"></p>
-                <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-                <script>
-                    $.ajax({ 
-                        url:'https://player.twitch.tv/?channel=away_nonseq',
-                        dataType:'json',
-                        success:function(stream) {
-                    document.getElementById("live").innerHTML="CURRENTLY LIVE WITH ".concat(parseInt(stream.stream.viewers), " VIEWERS.");
-                        },
-                        error:function() {
-                    document.getElementById("live").innerHTML="CURRENTLY OFFLINE.";
-                        }
-                    });
-            </script>
 
 
             <div class="container"><p class="m-0 text-center text-white">Refs. Discord</p></div>
