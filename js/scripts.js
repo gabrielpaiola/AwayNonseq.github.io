@@ -73,7 +73,7 @@ const openModal = () => {
 }
 
 
-$.getJSON("https://api.twitch.tv/kraken/streams/illusionaryone?client_id=buozzi", function(c) {
+$.getJSON("https://api.twitch.tv/kraken/streams/illusionaryone?client_id=away_nonseq", function(c) {
   if (c.stream == null) {
     console.log("Offline");
   } else {
