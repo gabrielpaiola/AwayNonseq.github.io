@@ -71,3 +71,12 @@ const openModal = () => {
     modal.style.display = 'flex'
     setTimeout(() => { document.addEventListener('click', handleClickOutside, false) }, 200);
 }
+
+
+$.getJSON("https://api.twitch.tv/kraken/streams/illusionaryone?client_id=buozzi", function(c) {
+  if (c.stream == null) {
+    console.log("Offline");
+  } else {
+    console.log("Online");
+  }
+});
