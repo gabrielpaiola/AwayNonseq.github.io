@@ -15,6 +15,22 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <script>
+            var twitchUserName = 'timetocode' // your name goes here
+            $(document).ready(function() {    
+               $.getJSON("https://api.twitch.tv/kraken/streams/"+Away_Nonseq+"?callback=?",function(streamData) {
+                  console.log('Stream Data:', streamData) // debug message, shows all available data  
+                  if(streamData && streamData.stream) {
+                     // displayed if online
+                     $('#streamWidget').html("<b class='online'>*ONLINE*</b> twitch.tv: <a href='http://www.twitch.tv/"+twitchUserName+"'>"+ streamData.stream.channel.status+"</a>")
+                  } else {
+                     // displayed if offline
+                     $('#streamWidget').html("<b class='offline'>*OFFLINE*</b> <a href='http://www.twitch.tv/"+twitchUserName+"'>http://www.twitch.tv/"+twitchUserName+"</a>")
+                  }
+               })
+            })
+            </script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
