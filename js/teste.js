@@ -10,7 +10,7 @@
             cfg = $("#float_dc").data(),
             iframe = 'https://discordapp.com/widget?id=843599777101774848&theme=dark',
             params = [],
-            png = $("floatdisc.png").attr('src').replace(/\?.*/, '').replace(/[\w\.]+$/, "aa")
+            png = $("floatdisc.png").attr('src').replace(/\?.*/, '').replace(/[\w\.]+$/, "widget2.png")
         ;
         var val;
         for(var k in defaults)
