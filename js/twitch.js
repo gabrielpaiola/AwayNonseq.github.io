@@ -13,8 +13,8 @@ $(document).ready(function() {
 
 	*/
 	const GLOBAL_channels = [
-		'rodrigobugado',
-		'nattank',
+		'luhlugg',
+		'merlinzor',
 		// 'jhvshow',
 
 	];
