@@ -22,8 +22,8 @@ $(document).ready(function() {
 	const GLOBAL_title2 = "otserv.com";
 	const GLOBAL_title3 = "!otserv";
 	const GLOBAL_title4 = "otserv";
-	const GLOBAL_title5 = "otservbr-global";
-	const GLOBAL_gameID = "+18 ThoriaOT !! !ot !ts !macro !tibiacamp !epic // SAUDADES ETERNA IRMÃO NTC";
+	const GLOBAL_title5 = "+18 ThoriaOT !! !ot !ts !macro !tibiacamp !epic // SAUDADES ETERNA IRMÃO NTC";
+	const GLOBAL_gameID = "19619";
 
 	//  FIM MENU
 
