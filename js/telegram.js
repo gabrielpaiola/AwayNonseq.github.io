@@ -10,7 +10,7 @@
             cfg = $("#float_dc").data(),
             iframe = 'https://discordapp.com/widget?id=843599777101774848&theme=dark',
             params = [],
-            png = $("#float_dc").attr('src').replace(/\?.*/, '').replace(/[\w\.]+$/, "widget.png")
+            png = $("#float_dc").attr('src').replace(/\?.*/, '').replace(/[\w\.]+$/, "telegram.png")
         ;
         var val;
         for(var k in defaults)
@@ -31,8 +31,8 @@
         var w = $("#float_dc_plugin");
 
         var top_ = ($(window).height() - cfg.height)/2;
-        if(top_ < 50)
-            top_ = 50;
+        if(top_ < 75)
+            top_ = 75;
         var right_ = cfg.container_width * -1;
 
         var css = {width:cfg.container_width, height:cfg.height,
