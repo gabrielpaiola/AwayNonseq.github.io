@@ -429,6 +429,33 @@
                         <i class="fab fa-telegram-plane my-float" style='font-size:36px'></i>
                     </a>
 
+  <!-- Messenger Plugin de bate-papo Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin de bate-papo code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "104578331892013");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/pt_BR/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
             <div class="container"><p class="m-0 text-center text-white">Refs. Discord</p></div>
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Away Nonseq 2021</p></div>
