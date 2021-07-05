@@ -1,1 +1,0 @@
-7z.exe x Primo.zip
