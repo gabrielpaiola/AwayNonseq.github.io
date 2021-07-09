@@ -63,16 +63,28 @@ $html = "<div class='content'>
                       </div>
                     </div>
                     <div class='row'>
-                      <div class='col-md-4'>
-                        <div class='form-group'>
-                          <label class='bmd-label-floating'>Expiry Date *</label>
-                          <input type='text' name ='expiry_date' value='$row->expiry_date' class='form-control'>
-                        </div>
+                    <div class='col-md-2'>
+                    <div class='form-group'>
+                      <label class='bmd-label-floating'>Expiry Date *</label>
+                      <input type='text' name ='expiry_date' value='$row->expiry_date' class='form-control'>
                       </div>
-                      <div class='col-md-4'>
+                    </div>
+                      <div class='col-md-2'>
                       <div class='form-group'>
                         <label class='bmd-label-floating'>Status *</label>
                         <input type='text' name ='status' value='$row->status' class='form-control'>
+                      </div>
+                    </div>
+                    <div class='col-md-4'>
+                      <div class='form-group'>
+                        <label class='bmd-label-floating'>Package</label>
+                        <input type='text' name ='package' value='$row->package' list='PacotesList' class='form-control'>
+                        <datalist id='PacotesList'>
+                            <option value='Trial'/>
+                            <option value='Mensal'/>
+                            <option value='Trimestral'/>
+                            <option value='STAFF'/>
+                        </datalist>
                       </div>
                     </div>
                     <div class='col-md-4'>

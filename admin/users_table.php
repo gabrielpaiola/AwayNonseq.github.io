@@ -26,7 +26,9 @@ $html .= "<div class='content'>
                                     <th>Username</th>
                                     <th>Expiry Date</th>
                                     <th>Status</th>
-                                    <th>Desc</th>
+                                    <th>Indicacao</th>
+                                    <th>Package</th>
+                                    <th>Description</th>
                                     <th>Machine ID</th>
                                 </tr>
                             <tbody>";
@@ -36,6 +38,8 @@ while($row = $users_query->fetchObject())
     $html .= "<td><a style='color: black;' href='user_detail.php?id=$row->id'>".$row->username."</a></td>";
     $html .= "<td><a style='color: black;' href='user_detail.php?id=$row->id'>".$row->expiry_date."</a></td>";
     $html .= "<td><a style='color: black;' href='user_detail.php?id=$row->id'>".$row->status."</a></td>";
+    $html .= "<td><a style='color: black;' href='user_detail.php?id=$row->id'>".$row->server."</a></td>";
+    $html .= "<td><a style='color: black;' href='user_detail.php?id=$row->id'>".$row->package."</a></td>";
     $html .= "<td><a style='color: black;' href='user_detail.php?id=$row->id'>".$row->description."</a></td>";
     $html .= "<td><a style='color: black;' href='user_detail.php?id=$row->id'>".$row->machine_id1."</a></td>";
     $html .= "</tr>";

@@ -31,7 +31,7 @@
             <input type="text" name="username" placeholder="Username *" value="<?php $username; ?>" autofocus/>
             <input type="email" name ="email" placeholder="Email *" value="<?php $email; ?>"/>
             <input type="text" name ="team" placeholder="Team" value="<?php $team; ?>"/>
-            <input type="text" name ="server" placeholder="Indicação" value="<?php $server; ?>"/>
+            <input type="text" name ="server" placeholder="Indicação / Cupom" value="<?php $server; ?>"/>
             <input type="text" name ="disc" placeholder="Discord Tag" value="<?php $disc; ?>"/>
             <input type="password" name="password1" placeholder="Password *" />
             <input type="password" name="password2" placeholder="Password Confirmation *" />

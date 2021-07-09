@@ -8,7 +8,11 @@ $machineid = $_GET['id'];
  $result = $stmt->execute([$username]);
  $row = $stmt->fetchObject();
 
- if($row == null) {
+ $stmt_machine_id = $db->prepare('SELECT * FROM users WHERE machine_id1 = ? LIMIT 1');
+ $result_machine_id = $stmt_machine_id->execute([$machineid]);
+ $row_machine_id = $stmt_machine_id->fetchObject();
+
+ if($row == null || $row_machine_id != null) {
      return;
  }
 

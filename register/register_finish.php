@@ -13,14 +13,16 @@
         <div class="wrapper">
         <form class="login">
             <p class="title">Cadastro Efetuado!</p>
-            <p>Bem vindo ao Primo Marcos!!!</p>
-            <p><u>Para liberação de seu usuário entre em contato com nossa equipe.</u><br></p>
-            <font size="100px">  <a 	size="10" href="https://discord.gg/SGgwjUarPu" target="_blank"><u>Discord</u><br></a>
-            <a href="https://www.facebook.com/primomarcostibia" target="_blank"><u>Facebook</u></a></font>
+            <p> Bem vindo ao Primo Marcos!!!</p>
+            <p> Para entrar em contato com nossa equipe utilize um dos meios abaixo:</p>
+            <font size="100px">  <a 	size="10" href="https://discord.gg/SGgwjUarPu" target="_blank">Discord<br></a>
+            <a href="https://www.facebook.com/primomarcostibia" target="_blank">Facebook</a></font>
 
-            <p><br><br>Para acesso ao launcher basta clicar no botão abaixo (necessário ter a senha para descompilar o arquivo, a mesma será passada por nossa equipe após liberação de usuário).</p>
-            <a size="+10" href="https://primomarcos.com/Downloads/Primo_Launcher.rar" target="_blank" ><button><u>DOWNLOAD</u></button></a>
+            <p><u>  Seu usuário ja esta ativo e possui 02 dias para você conhecer e testar o primo.</u><br></p>
 
+            <p><br><br><u>  Agora basta realizar o login (clicando no botão abaixo) e fazer o download do launcher.</u></p>
+
+                 <button onclick="location.href='../user/user_login.php'" type="button">LOGIN</button>
             
         </form>
         </div>

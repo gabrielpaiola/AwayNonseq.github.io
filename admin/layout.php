@@ -36,9 +36,9 @@ function buildLayout($html)
         <div class='sidebar-wrapper'>
           <ul class='nav'>
             <li class='nav-item active'>
-              <a class='nav-link' href='users_table.php'>
+              <a class='nav-link' href='https://primomarcos.com'>
                 <i class='material-icons'>dashboard</i>
-                <p>Users</p>
+                <p>Home</p>
               </a>
             </li>
             <li class='nav-item'>
@@ -59,6 +59,12 @@ function buildLayout($html)
           <p>Version</p>
         </a>
         </li>
+        <li class='nav-item'>
+        <a class='nav-link' href='logout.php'>
+          <i class='material-icons'>exit_to_app</i>
+          <p>Logout</p>
+        </a>
+        </li>
             <!-- your sidebar here -->
           </ul>
         </div>
@@ -68,7 +74,7 @@ function buildLayout($html)
         <nav class='navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top '>
           <div class='container-fluid'>
             <div class='navbar-wrapper'>
-              <a class='navbar-brand' href='users_table.php'>Users</a>
+              <a class='navbar-brand' href='users_table.php'>Refresh</a>
             </div>
             <button class='navbar-toggler' type='button' data-toggle='collapse' aria-controls='navigation-index' aria-expanded='false' aria-label='Toggle navigation'>
               <span class='sr-only'>Toggle navigation</span>
@@ -97,7 +103,7 @@ function buildLayout($html)
               </ul>
             </nav>
             <div class='copyright float-right'>
-              PRIMO MARCOS &copy;
+              Copyright &copy; Primo Marcos 2021;
             </div>
             <!-- your footer here -->
           </div>
