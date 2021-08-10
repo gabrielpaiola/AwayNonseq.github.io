@@ -3,7 +3,7 @@ function buildLayout($html)
 {
   echo "<html lang='en'>
   <head>
-    <title>Primo Marcos Admin</title>
+    <title>Painel Admin</title>
     <!-- Required meta tags -->
     <meta charset='utf-8'>
     <meta content='width=device-width, initial-scale=1.0' name='viewport' />
@@ -30,33 +30,33 @@ function buildLayout($html)
             Primo Marcos
           </a>
           <a href='#' class='simple-text logo-normal'>
-            Admin
+            Painel Admin
           </a>
         </div>
         <div class='sidebar-wrapper'>
           <ul class='nav'>
-            <li class='nav-item active'>
-              <a class='nav-link' href='https://primomarcos.com'>
-                <i class='material-icons'>dashboard</i>
-                <p>Home</p>
-              </a>
-            </li>
+          <li class='nav-item'>
+          <a class='nav-link' href='update_status.php'>
+            <i class='material-icons'>archive</i>
+            <p>Update Users Status</p>
+          </a>
+          </li>
             <li class='nav-item'>
             <a class='nav-link' href='../date.php' target='_blank'>
-              <i class='material-icons'>dashboard</i>
+              <i class='material-icons'>date_range</i>
               <p>Data</p>
             </a>
             </li>
           <li class='nav-item'>
-          <a class='nav-link' href='../msglauncher.php' target='_blank'>
-            <i class='material-icons'>dashboard</i>
-            <p>Message</p>
+          <a class='nav-link' href='../msglauncherauto.php' target='_blank'>
+            <i class='material-icons'>dvr</i>
+            <p>Message DB</p>
           </a>
           </li>
         <li class='nav-item'>
-        <a class='nav-link' href='../versoes.php' target='_blank'>
-          <i class='material-icons'>dashboard</i>
-          <p>Version</p>
+        <a class='nav-link' href='../infos.php' target='_blank'>
+          <i class='material-icons'>format_list_numbered</i>
+          <p>Version DB</p>
         </a>
         </li>
         <li class='nav-item'>
@@ -74,7 +74,10 @@ function buildLayout($html)
         <nav class='navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top '>
           <div class='container-fluid'>
             <div class='navbar-wrapper'>
-              <a class='navbar-brand' href='users_table.php'>Refresh</a>
+            <a class='navbar-brand' href='users_table.php'>Users Table</a>
+              <a class='navbar-brand' href='infos_table.php'>Infos Table</a>
+              <a class='navbar-brand' href='msg_launcher_table.php'>Msg Launcher</a>
+              <a class='navbar-brand' href='cupons_table.php'>Cupons</a>
             </div>
             <button class='navbar-toggler' type='button' data-toggle='collapse' aria-controls='navigation-index' aria-expanded='false' aria-label='Toggle navigation'>
               <span class='sr-only'>Toggle navigation</span>

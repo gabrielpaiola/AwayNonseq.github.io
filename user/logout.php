@@ -1,1 +1,1 @@
-<?php session_start(); session_destroy(); header("Location: user_login.php");exit; ?>
+<?php session_start(); session_destroy(); $_SESSION['logged_user'] = 0; header("Location: user_login.php"); exit; ?>

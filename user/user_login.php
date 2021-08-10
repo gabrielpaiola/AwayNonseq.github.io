@@ -1,31 +1,81 @@
-<?php include('../dist/server.php')?>
-<html>
-    <head>
-        <title>Login User</title>
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
-    <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="https://primomarcos.com"><img src="../Imagens/Skull.png" width="50" height="50" alt="Primo Marcos" /></a>
-            </div>
-        </nav>
+<?php
+require_once('../layout.php');
+include('../dist/server.php');
+
         
-        <div class="wrapper">
-        <form class="login" method="post" action="user_login.php">
-            <p class="title">Login User</p>
-            <?php include('errors.php');?>
-            <br>
-            <input type="text" name="username" placeholder="Username" value="<?php $username; ?>" autofocus/>
-            <input type="password" name="password" placeholder="Password" />
-            <button type="submit" name="login_user">
-                <i class="spinner"></i>
-                <span class="state">Login</span>
-            </button>
-        </form>
-        <footer><a target="blank" href="#"></a></footer>
-        </p>    
+$html = "<title>P.M User Login</title>";
+
+$html .= " 
+
+<div id='layoutSidenav_content'>
+    <div class='container'>
+        <div class='row justify-content-center'>
+            <div class='col-lg-5'>
+                <div class='card shadow-lg border-0 rounded-lg mt-5'>
+                    <div class='card-header'><h3 class='text-center font-weight-light my-4'>User Login</h3></div>
+                    <?php include('errors.php');?>
+                    <div class='card-body'>
+                        <form class='login' method='post' action='user_login.php'>
+                            <div class='form-floating mb-3'>
+                                <input class='form-control' type='text' name='username' placeholder='Username' autofocus/>
+                                <label for='inputEmail'>Usuário</label>
+                            </div>
+                            <div class='form-floating mb-3'>
+                                <input class='form-control' type='password' name='password' placeholder='Password' autofocus/>
+                                <label for='inputPassword'>Password</label>
+                            </div>
+                            <div class='d-flex align-items-center justify-content-between mt-4 mb-0'>
+                                <a class='small' href='../mailer/esqueci-a-senha.php'>Forgot Password?</a>
+                                
+                                <button class='texte-center'; style='background: #203470; border-radius: 6px; padding: 15px; cursor: pointer; color: #fff; border: none; font-size: 16px;' type='submit' name='login_user'>
+                                    <i class='spinner'></i>
+                                    <span class='state'>Login</span>
+                                </button>
+
+                            </div>
+                        </form>
+                    </div><br><br>
+                    <div class='card-footer text-center py-3'>
+                        <a href='../register/register.php'><button style='background: #203470; border-radius: 6px; padding: 15px; cursor: pointer; color: #fff; border: none; font-size: 16px;'>Need an account? Sign up!</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</body>
-</html>
+</div>
+
+
+
+
+
+
+
+
+
+
+        ";
+
+
+
+
+
+
+
+
+
+        $html .= "
+        </div></div></div></div></div>";
+buildLayout($html);
+
+
+
+
+
+
+
+
+
+
+
+
+?>

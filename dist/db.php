@@ -1,10 +1,10 @@
 <?php 
 function open_db()
 {   
-    $host = '34.132.227.206';
+    $host = 'localhost';
     $db = 'marcos';
     $user = 'root';
-    $pass = 'marcos1379';
+    $pass = 'Primomarcos@132710';
     
     try
     {
